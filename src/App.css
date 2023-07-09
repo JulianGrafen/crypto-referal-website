@@ -1,3 +1,10 @@
+
+.background{
+  height: 1500px;
+  background: linear-gradient(180deg, #3670A6 0%, #22344A 31.56%, #1D2335 100%);
+}
+
+
 .App {
   text-align: center;
 }

@@ -7,7 +7,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#424756",
+        bluePrimary: "#27435E",
+        blue1: "3670A6",
+        blue2: "22344A ",
+        blue3: "1D2335 ",
         secondary: "#00f6ff",
         videoBluePrimary: "#022441",
         videoBlueSecondary: "#061927"
@@ -21,7 +24,7 @@ module.exports = {
       "m" : '1.2rem',
       "sm": '1.3rem',
       "base": '1.4rem',
-      "mbHeading": "2.75rem",
+      "mbHeading": "2.25rem",
       "xl": '1em',
       "2xl": '1.8em',
       "3xl": '2.8rem',

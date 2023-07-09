@@ -3,8 +3,8 @@ const MyComponent = () => {
 
 
 return (
-    <div className="bg-blue-700 h-100 text-center">
-    <h1 className='font-poppins font-semibold text-4xl'>Wie Kauft man Bitcoin?
+    <div className="background text-center">
+    <h1 className="pt-12 font-poppins font-semibold text-white text-mbHeading">WIE KAUFT MAN BITCOIN?
     </h1>
     </div>
   );
