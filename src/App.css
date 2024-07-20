@@ -1,24 +1,16 @@
 
 .background{
   height:2300px;
-  background: linear-gradient(180deg, #3670A6 0%, #22344A 31.56%, #1D2335 100%);
+  background: linear-gradient(180deg, #0084ff 0%, #22344A 31.56%, #1D2335 100%);
 }
 
 
-.App {
-  text-align: center;
-}
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
