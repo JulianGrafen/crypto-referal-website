@@ -10,10 +10,7 @@ const Navbar = () => {
                     <Link to="/articles" className="text-lg font-semibold hover:text-gray-400">Artikel</Link>
                     <Link to="/blog" className="text-lg font-semibold hover:text-gray-400">Blog</Link>
                 </div>
-                <div className="hidden md:flex items-center space-x-4">
-                    <button className="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md">Anmelden</button>
-                    <button className="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-md">Registrieren</button>
-                </div>
+             
                 <div className="md:hidden flex items-center">
                     {/* Hier könnten Sie ein Mobile-Menü-Symbol hinzufügen */}
                 </div>

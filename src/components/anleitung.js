@@ -2,7 +2,7 @@ import React from 'react';
 
 const ErstelleEinKonto = () => {
   return (
-    <article className="text-white font-poppins p-5 max-w-3xl mx-auto bg-gray-600 shadow-lg rounded-lg mt-10">
+    <article className="text-white font-poppins p-5 max-w-3xl mx-auto bg-gray-600 shadow-lg">
         <h1 className="text-2xl font-bold text-center mb-6">Wie man einfach und sicher Bitcoin auf Binance kauft</h1>
         <p className="text-center mb-6">Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie ganz einfach Ihr erstes Bitcoin auf Binance kaufen können. Ideal für Anfänger!</p>
         <div className="py-4">
