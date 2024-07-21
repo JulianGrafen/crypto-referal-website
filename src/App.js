@@ -6,6 +6,7 @@ import Hero from "./components/hero";
 import PriceMarquee from './components/pricemarquee';
 import Navbar from "./components/navbar";
 import Blog from "./pages/blog";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -13,12 +14,16 @@ function App() {
       <PriceMarquee />
       <Navbar />
 
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/blog" element={<Blog />} />
         {/* Fügen Sie hier weitere Routen hinzu, falls nötig */}
       </Routes>
+      <Footer />
+
     </Router>
+    
   );
 }
 
@@ -28,6 +33,8 @@ const Home = () => {
     <div>
       <Article />
       <Hero />
+      <Footer />
+
     </div>
   );
 }
