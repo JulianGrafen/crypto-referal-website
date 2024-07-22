@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.4c05d9be.css",
-    "main.js": "/static/js/main.a3f88c29.js",
+    "main.css": "/static/css/main.37bb3763.css",
+    "main.js": "/static/js/main.db135da6.js",
     "static/js/787.d3a9613e.chunk.js": "/static/js/787.d3a9613e.chunk.js",
     "static/media/Verifizieren_binance.jpg": "/static/media/Verifizieren_binance.e08a076400591f2575cf.jpg",
     "static/media/Registrieren_bei_binance_um_bitcoin_zu_kaufen.jpg": "/static/media/Registrieren_bei_binance_um_bitcoin_zu_kaufen.078f23961af938655d22.jpg",
     "static/media/btcLogo.svg": "/static/media/btcLogo.75ff43c6b4679e473acc9b8d1361087d.svg",
     "index.html": "/index.html",
-    "main.4c05d9be.css.map": "/static/css/main.4c05d9be.css.map",
-    "main.a3f88c29.js.map": "/static/js/main.a3f88c29.js.map",
+    "main.37bb3763.css.map": "/static/css/main.37bb3763.css.map",
+    "main.db135da6.js.map": "/static/js/main.db135da6.js.map",
     "787.d3a9613e.chunk.js.map": "/static/js/787.d3a9613e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4c05d9be.css",
-    "static/js/main.a3f88c29.js"
+    "static/css/main.37bb3763.css",
+    "static/js/main.db135da6.js"
   ]
 }
