@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.b5ca3d85.css",
-    "main.js": "/static/js/main.5fad451b.js",
+    "main.js": "/static/js/main.768e790a.js",
     "static/js/787.d3a9613e.chunk.js": "/static/js/787.d3a9613e.chunk.js",
     "static/media/btcLogo.svg": "/static/media/btcLogo.75ff43c6b4679e473acc9b8d1361087d.svg",
     "index.html": "/index.html",
     "main.b5ca3d85.css.map": "/static/css/main.b5ca3d85.css.map",
-    "main.5fad451b.js.map": "/static/js/main.5fad451b.js.map",
+    "main.768e790a.js.map": "/static/js/main.768e790a.js.map",
     "787.d3a9613e.chunk.js.map": "/static/js/787.d3a9613e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b5ca3d85.css",
-    "static/js/main.5fad451b.js"
+    "static/js/main.768e790a.js"
   ]
 }
