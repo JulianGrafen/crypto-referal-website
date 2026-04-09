@@ -1,77 +1,129 @@
 import React from 'react';
+import { GUIDE_STEPS } from '../data/guideSteps';
+import CtaButton from './CtaButton';
 
-const ErstelleEinKonto = () => {
-  return (
-    <article className="text-white font-poppins p-5 max-w-3xl mx-auto bg-gray-600 shadow-lg">
-        <h1 className="text-2xl font-bold text-center mb-6">Wie man einfach und sicher Bitcoin auf Binance kauft</h1>
-        <p className="text-center mb-6">Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie ganz einfach Ihr erstes Bitcoin auf Binance kaufen können. Ideal für Anfänger!</p>
-        <div className="py-4">
-            <ol className="list-decimal pl-5 space-y-6">
-                <li className="mb-6">
-                    <p className="font-bold text-lg mb-2">1. Erstellen Sie ein Konto auf Binance</p>
-                    <ul className="list-disc pl-5 space-y-2">
-                        <li>
-                            Folgen Sie diesem <a href="https://accounts.binance.com/register?ref=YSY8VOEH" className="text-blue-500 underline">Link</a> auf Binance, um 10% Rabatt auf die Kaufgebühren zu erhalten, und klicken Sie auf "Registrieren".
-                        </li>
-                        <li>Geben Sie Ihre E-Mail-Adresse und ein sicheres Passwort ein.</li>
-                        <li>Bestätigen Sie Ihre E-Mail-Adresse, indem Sie dem Link in der Bestätigungs-E-Mail von Binance folgen.</li>
-                        <li>Schließen Sie die Registrierung ab, indem Sie alle erforderlichen Informationen eingeben.</li>
-                        {/* Platzhalter für Bild 1 */}
-                        <li className="mt-4">
-                            <img src="https://via.placeholder.com/600x400?text=Konto+erstellen" alt="Konto erstellen" className="w-full rounded-lg shadow-md" />
-                            <p className="text-sm text-center mt-2">Beispielbild: Kontoerstellung auf Binance.</p>
-                        </li>
-                    </ul>
-                </li>
-                <li className="mb-6">
-                    <p className="font-bold text-lg mb-2">2. Verifizieren Sie Ihr Konto</p>
-                    <ul className="list-disc pl-5 space-y-2">
-                        <li>Melden Sie sich bei Ihrem Binance-Konto an.</li>
-                        <li>Klicken Sie oben rechts auf Ihr Profilbild und wählen Sie "Identitätsverifizierung".</li>
-                        <li>Folgen Sie den Anweisungen, um Ihre Identität zu überprüfen. Sie werden wahrscheinlich Fotos oder Scans Ihres Ausweises oder Reisepasses sowie ein Selfie hochladen müssen.</li>
-                        <li>Warten Sie auf die Überprüfung Ihrer Dokumente. Dies kann einige Zeit in Anspruch nehmen, aber Sie werden per E-Mail über den Fortschritt informiert.</li>
-                        {/* Platzhalter für Bild 2 */}
-                        <li className="mt-4">
-                            <img src="https://via.placeholder.com/600x400?text=Konto+verifizieren" alt="Konto verifizieren" className="w-full rounded-lg shadow-md" />
-                            <p className="text-sm text-center mt-2">Beispielbild: Identitätsverifizierung auf Binance.</p>
-                        </li>
-                    </ul>
-                </li>
-                <li className="mb-6">
-                    <p className="font-bold text-lg mb-2">3. Fügen Sie Geld zu Ihrem Binance-Konto hinzu</p>
-                    <ul className="list-disc pl-5 space-y-2">
-                        <li>Nachdem Ihr Konto verifiziert wurde, melden Sie sich an und klicken Sie auf "Einzahlungen" in der oberen Menüleiste.</li>
-                        <li>Wählen Sie die gewünschte Einzahlungsmethode, zum Beispiel Banküberweisung oder Kreditkarte, und folgen Sie den Anweisungen, um das Geld auf Ihr Binance-Konto zu überweisen.</li>
-                        <li>Warten Sie, bis das Geld auf Ihrem Binance-Konto eingegangen ist. Dies kann je nach Einzahlungsmethode variieren.</li>
-                        {/* Platzhalter für Bild 3 */}
-                        <li className="mt-4">
-                            <img src="https://via.placeholder.com/600x400?text=Geld+einzahlen" alt="Geld einzahlen" className="w-full rounded-lg shadow-md" />
-                            <p className="text-sm text-center mt-2">Beispielbild: Geld auf das Binance-Konto einzahlen.</p>
-                        </li>
-                    </ul>
-                </li>
-                <li className="mb-6">
-                    <p className="font-bold text-lg mb-2">4. Kaufen Sie Bitcoin auf Binance</p>
-                    <ul className="list-disc pl-5 space-y-2">
-                        <li>Melden Sie sich bei Ihrem Binance-Konto an.</li>
-                        <li>Klicken Sie oben in der Menüleiste auf "Handel" und wählen Sie "Krypto kaufen".</li>
-                        <li>Wählen Sie Bitcoin (BTC) als die gewünschte Kryptowährung aus.</li>
-                        <li>Geben Sie den Betrag ein, den Sie kaufen möchten, oder wählen Sie einen der vorgeschlagenen Beträge aus.</li>
-                        <li>Überprüfen Sie die Transaktionsdetails und bestätigen Sie den Kauf.</li>
-                        {/* Platzhalter für Bild 4 */}
-                        <li className="mt-4">
-                            <img src="https://via.placeholder.com/600x400?text=Bitcoin+kaufen" alt="Bitcoin kaufen" className="w-full rounded-lg shadow-md" />
-                            <p className="text-sm text-center mt-2">Beispielbild: Bitcoin auf Binance kaufen.</p>
-                        </li>
-                    </ul>
-                </li>
-            </ol>
-            <p className="font-bold mt-6 text-center">Gratulation! Sie haben erfolgreich Bitcoin auf Binance gekauft. Die gekauften Bitcoin werden in Ihrem Binance-Wallet angezeigt.</p>
-            <br />
-            <p className="text-center">Bitte beachten Sie, dass der genaue Ablauf je nach Benutzeroberfläche von Binance variieren kann. Stellen Sie sicher, dass Sie sich mit den aktuellen Funktionen und Richtlinien von Binance vertraut machen, da diese sich im Laufe der Zeit ändern können.</p>
-        </div>
-    </article>
-  );
-};
+const CheckIcon = () => (
+  <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 flex-shrink-0 mt-0.5" aria-hidden="true">
+    <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z" />
+  </svg>
+);
 
-export default ErstelleEinKonto;
+const LightBulbIcon = () => (
+  <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 flex-shrink-0 mt-0.5" aria-hidden="true">
+    <path d="M9 21c0 .55.45 1 1 1h4c.55 0 1-.45 1-1v-1H9v1zm3-19C8.14 2 5 5.14 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55.45 1 1 1h6c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.86-3.14-7-7-7z" />
+  </svg>
+);
+
+const StepSubItem = ({ text }) => (
+  <li className="flex items-start gap-3 text-btcMuted text-sm sm:text-base leading-relaxed">
+    <span className="text-btcGreen mt-0.5">
+      <CheckIcon />
+    </span>
+    <span>{text}</span>
+  </li>
+);
+
+const ProTip = ({ text }) => (
+  <div className="flex items-start gap-3 mt-6 bg-btcCard border border-btcBorder rounded-lg px-4 py-3">
+    <span className="text-btcOrange">
+      <LightBulbIcon />
+    </span>
+    <p className="text-btcMuted text-sm leading-relaxed">
+      <strong className="text-btcText font-semibold">Pro-Tipp: </strong>
+      {text}
+    </p>
+  </div>
+);
+
+/**
+ * A single step card in the HowTo guide.
+ * `article` uses semantic HTML, anchored by `id` for JSON-LD step URLs.
+ */
+const GuideStepCard = ({ step }) => (
+  <article
+    id={step.id}
+    className="relative bg-btcCard border border-btcBorder rounded-2xl p-6 sm:p-8 scroll-mt-24"
+    aria-labelledby={`${step.id}-title`}
+  >
+    {/* Step number badge */}
+    <div
+      className="absolute -top-4 left-6 sm:left-8 flex items-center justify-center w-8 h-8 rounded-full bg-btcOrange text-white font-bold text-sm"
+      aria-hidden="true"
+    >
+      {step.stepNumber}
+    </div>
+
+    {/* H3 heading: long-tail keyword embedded naturally */}
+    <h3
+      id={`${step.id}-title`}
+      className="font-poppins font-bold text-btcText text-xl sm:text-2xl mt-2 mb-1"
+    >
+      {step.title}
+    </h3>
+    <p className="text-btcOrange text-sm font-medium mb-4">{step.subtitle}</p>
+
+    <p className="text-btcMuted mb-6 leading-relaxed">{step.description}</p>
+
+    <ol className="space-y-3 list-none p-0 m-0">
+      {step.subSteps.map((subStep) => (
+        <StepSubItem key={subStep} text={subStep} />
+      ))}
+    </ol>
+
+    <ProTip text={step.proTip} />
+
+    {/* CTA only on the final step */}
+    {step.hasCta && (
+      <div className="mt-8 text-center">
+        <CtaButton label="Jetzt Bitcoin kaufen – 10% Rabatt" />
+        <p className="mt-3 text-btcMuted text-xs">
+          Kostenlos · Kein Mindesteinsatz · Sofort startklar
+        </p>
+      </div>
+    )}
+  </article>
+);
+
+/**
+ * Full HowTo guide section.
+ * H2 targets the secondary keyword cluster "Bitcoin kaufen Anleitung Schritt für Schritt".
+ * Data-driven via guideSteps.js – no hard-coded step content here (DRY principle).
+ */
+const GuideSection = () => (
+  <section
+    id="anleitung"
+    className="bg-btcSurface py-20 px-4"
+    aria-labelledby="guide-heading"
+  >
+    <div className="max-w-3xl mx-auto">
+
+      {/* ── H2: Section heading ── */}
+      <h2
+        id="guide-heading"
+        className="font-poppins font-bold text-btcText text-3xl sm:text-4xl text-center mb-4"
+      >
+        Bitcoin auf Binance kaufen –
+        <br className="hidden sm:block" />
+        {' '}Schritt für Schritt erklärt
+      </h2>
+      <p className="text-btcMuted text-center mb-16 max-w-xl mx-auto">
+        Diese Anleitung führt dich vollständig durch den Prozess – von der Registrierung
+        bis zum fertigen Kauf. Dauer: ca. 15 Minuten.
+      </p>
+
+      {/* Vertical connector line on desktop */}
+      <div className="relative space-y-12">
+        <div
+          className="absolute left-[1.85rem] top-4 bottom-4 w-px bg-btcBorder hidden sm:block"
+          aria-hidden="true"
+        />
+        {GUIDE_STEPS.map((step) => (
+          <GuideStepCard key={step.id} step={step} />
+        ))}
+      </div>
+
+    </div>
+  </section>
+);
+
+export default GuideSection;
