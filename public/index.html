@@ -5,6 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#F7931A" />
 
+    <!--
+      GitHub Pages SPA routing fix – companion to public/404.html.
+      404.html encodes the original path as a query string: /?/blog
+      This script decodes it back to /blog before React Router boots,
+      so deep links and page refreshes on sub-routes work correctly.
+    -->
+    <script>
+      (function() {
+        var l = window.location;
+        if (l.search[1] === '/') {
+          var decoded = l.search.slice(1).split('&').map(function(s) {
+            return s.replace(/~and~/g, '&');
+          });
+          window.history.replaceState(
+            null, null,
+            l.pathname.slice(0, -1) + decoded[0] +
+            (decoded[1] ? '?' + decoded[1] : '') +
+            l.hash
+          );
+        }
+      })();
+    </script>
+
     <!-- ── Primary SEO ─────────────────────────────────────────────── -->
     <title>Bitcoin kaufen auf Binance – Schritt-für-Schritt-Anleitung 2024 | 10% Rabatt</title>
     <meta

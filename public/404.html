@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <title>Wie kauft man Bitcoin</title>
+    <!--
+      GitHub Pages SPA redirect fix.
+      When GH Pages serves a 404 for a client-side route (e.g. /blog),
+      this page encodes the full URL into the query string and redirects
+      to index.html, where the companion script in index.html restores
+      the original URL via the History API before React Router boots.
+
+      Technique by Rafael Pedicini – adapted for this project.
+    -->
+    <script>
+      var pathSegmentsToKeep = 0; // 0 = custom domain (no repository sub-path)
+
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
