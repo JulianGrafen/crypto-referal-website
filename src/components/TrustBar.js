@@ -2,39 +2,42 @@ import React from 'react';
 import { TRUST_STATS } from '../data/trustStats';
 
 const TrustStatIcon = ({ svgPath }) => (
-  <svg viewBox="0 0 24 24" fill="currentColor" className="w-7 h-7" aria-hidden="true">
+  <svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6" aria-hidden="true">
     <path d={svgPath} />
   </svg>
 );
 
-const TrustStatItem = ({ value, label, svgPath }) => (
-  <div className="flex flex-col items-center gap-2 text-center">
-    <span className="text-btcOrange">
+const TrustStatCard = ({ value, label, svgPath }) => (
+  <li className="card-glass rounded-2xl px-5 py-6 flex flex-col items-center gap-3 text-center">
+    <span className="flex items-center justify-center w-12 h-12 rounded-xl bg-btcOrange/10 text-btcOrange">
       <TrustStatIcon svgPath={svgPath} />
     </span>
-    <span className="font-poppins font-bold text-btcText text-2xl leading-none">{value}</span>
-    <span className="text-btcMuted text-sm">{label}</span>
-  </div>
+    <span className="font-poppins font-extrabold text-btcText text-2xl leading-none">{value}</span>
+    <span className="text-btcMuted text-xs font-medium leading-snug">{label}</span>
+  </li>
 );
 
 /**
- * Social-proof bar displayed directly below the Hero section.
- * Data-driven via trustStats.js – add or remove stats there.
+ * Social-proof bar with glassmorphism stat cards.
+ * Data-driven via trustStats.js.
  */
 const TrustBar = () => (
   <section
     aria-label="Binance Vertrauensindikatoren"
-    className="bg-btcSurface border-y border-btcBorder py-12 px-4"
+    className="bg-btcDark py-14 px-5"
   >
     <div className="max-w-4xl mx-auto">
       <p className="text-btcMuted text-xs text-center uppercase tracking-widest mb-8 font-medium">
         Warum Millionen Anleger Binance vertrauen
       </p>
-      <ul className="grid grid-cols-2 sm:grid-cols-4 gap-8 list-none p-0 m-0">
+      <ul className="grid grid-cols-2 sm:grid-cols-4 gap-4 list-none p-0 m-0">
         {TRUST_STATS.map((stat) => (
-          <li key={stat.id}>
-            <TrustStatItem value={stat.value} label={stat.label} svgPath={stat.svgPath} />
-          </li>
+          <TrustStatCard
+            key={stat.id}
+            value={stat.value}
+            label={stat.label}
+            svgPath={stat.svgPath}
+          />
         ))}
       </ul>
     </div>
@@ -42,3 +45,4 @@ const TrustBar = () => (
 );
 
 export default TrustBar;
+

@@ -9,6 +9,7 @@ import TrustBar from './components/TrustBar';
 import GuideSection from './components/anleitung';
 import FaqSection from './components/FaqSection';
 import Footer from './components/footer';
+import MobileCtaBar from './components/MobileCtaBar';
 import Blog from './pages/blog';
 import Impressum from './pages/impressum';
 
@@ -31,6 +32,8 @@ const App = () => (
       <Route path="/blog" element={<Blog />} />
       <Route path="/impressum" element={<Impressum />} />
     </Routes>
+    {/* Sticky mobile CTA – rendered outside Routes so it persists across pages */}
+    <MobileCtaBar />
   </Router>
 );
 

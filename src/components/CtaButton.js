@@ -8,20 +8,21 @@ const ArrowRightIcon = () => (
 );
 
 const SIZE_CLASSES = {
-  sm: 'px-6 py-3 text-base rounded-lg',
-  lg: 'px-10 py-4 text-lg rounded-xl',
+  sm: 'px-6 py-3 text-sm rounded-xl',
+  lg: 'px-8 py-4 text-base sm:text-lg rounded-2xl',
 };
 
 /**
  * Reusable affiliate CTA button.
- * Always links to the Binance affiliate URL defined in siteConfig.
+ * Always links to the Binance affiliate URL from siteConfig.
+ * Pass className="w-full justify-center" for full-width mobile layouts.
  */
 const CtaButton = ({ label = SITE_CONFIG.affiliate.ctaLabel, size = 'lg', className = '' }) => (
   <a
     href={SITE_CONFIG.affiliate.link}
     target="_blank"
     rel="noopener noreferrer sponsored"
-    className={`inline-flex items-center gap-3 bg-btcOrange hover:bg-btcOrangeHover text-white font-bold shadow-lg shadow-btcOrange/20 transition-all duration-200 hover:scale-105 hover:shadow-btcOrange/30 hover:shadow-xl ${SIZE_CLASSES[size]} ${className}`}
+    className={`inline-flex items-center gap-3 bg-gradient-orange text-white font-bold shadow-xl shadow-btcOrange/25 transition-all duration-200 active:scale-95 hover:scale-[1.02] hover:shadow-btcOrange/40 hover:shadow-2xl ${SIZE_CLASSES[size]} ${className}`}
     aria-label={`${label} – Binance-Konto erstellen (öffnet in neuem Tab)`}
   >
     {label}
@@ -30,3 +31,4 @@ const CtaButton = ({ label = SITE_CONFIG.affiliate.ctaLabel, size = 'lg', classN
 );
 
 export default CtaButton;
+

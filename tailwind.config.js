@@ -17,30 +17,37 @@ module.exports = {
         videoBlueSecondary: "#061927",
 
         // ── Design system: Bitcoin dark theme ──
-        btcDark:        "#080C14",   // Page background
-        btcSurface:     "#0D1829",   // Navbar, footer, cards
-        btcCard:        "#131C2E",   // Elevated card surfaces
-        btcBorder:      "#1E2D45",   // Borders & dividers
+        btcDark:        "#060A10",   // Page background
+        btcSurface:     "#0B1422",   // Navbar, footer, elevated surfaces
+        btcCard:        "#111927",   // Card surfaces
+        btcBorder:      "#1A2840",   // Borders & dividers
         btcOrange:      "#F7931A",   // Bitcoin orange – primary accent & CTAs
         btcOrangeHover: "#E8820E",   // CTA hover state
-        btcText:        "#EEF2FF",   // Primary text
-        btcMuted:       "#8BA3C4",   // Secondary / muted text
+        btcText:        "#F0F4FF",   // Primary text
+        btcMuted:       "#7A95B8",   // Secondary / muted text
         btcGreen:       "#00D97E",   // Success / checkmarks
+        btcGlass:       "rgba(255,255,255,0.04)", // Glassmorphism surface
       },
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
-      fontSize: {
-        s:         "0.8rem",
-        l:         "1.5rem",
-        sm:        "1.3rem",
-        base:      "1.4rem",
-        mbHeading: "2.25rem",
-        xl:        "1em",
-        "2xl":     "1.8em",
-        "3xl":     "2.8rem",
-        "4xl":     "4.025rem",
-        "5xl":     "8.052rem",
+      backgroundImage: {
+        'gradient-orange': 'linear-gradient(135deg, #F7931A 0%, #F5C842 100%)',
+        'gradient-hero':   'radial-gradient(ellipse 80% 60% at 50% -10%, rgba(247,147,26,0.12) 0%, transparent 70%)',
+      },
+      keyframes: {
+        'fade-up': {
+          '0%':   { opacity: '0', transform: 'translateY(16px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        'pulse-glow': {
+          '0%, 100%': { boxShadow: '0 0 0 0 rgba(247,147,26,0.4)' },
+          '50%':      { boxShadow: '0 0 0 12px rgba(247,147,26,0)' },
+        },
+      },
+      animation: {
+        'fade-up':    'fade-up 0.5s ease-out both',
+        'pulse-glow': 'pulse-glow 2.5s ease-in-out infinite',
       },
     },
 
