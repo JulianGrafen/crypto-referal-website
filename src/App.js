@@ -11,6 +11,7 @@ import FaqSection from './components/FaqSection';
 import Footer from './components/footer';
 import MobileCtaBar from './components/MobileCtaBar';
 import Blog from './pages/blog';
+import BlogPostPage from './pages/BlogPostPage';
 import Impressum from './pages/impressum';
 
 const HomePage = () => (
@@ -30,6 +31,7 @@ const App = () => (
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/blog" element={<Blog />} />
+      <Route path="/blog/:slug" element={<BlogPostPage />} />
       <Route path="/impressum" element={<Impressum />} />
     </Routes>
     {/* Sticky mobile CTA – rendered outside Routes so it persists across pages */}
